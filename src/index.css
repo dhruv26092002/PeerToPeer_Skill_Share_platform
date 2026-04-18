@@ -1,0 +1,45 @@
+@import "tailwindcss";
+:root {
+    /* Backgrounds */
+    --bg-main: #F8F9FA;          /* Very light gray/white */
+    --bg-sidebar: #FFFFFF;       /* Pure white sidebar */
+    --bg-card: #FFFFFF;          /* White cards */
+
+    /* Text */
+    --text-primary: #1A1A1A;     /* Near black for readability */
+    --text-secondary: #6C757D;   /* Muted gray for subtitles */
+
+    /* Accents (Keeping your brand identity) */
+    --accent-purple: #8A2BE2;    /* Main purple */
+    --accent-blue: #007BFF;      /* Fresh blue */
+    --border-color: #E9ECEF;     /* Subtle light borders */
+
+    /* Shadows (Crucial for light mode depth) */
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.sidebar {
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.sidebar-link {
+    color: var(--text-secondary);
+}
+
+.sidebar-link.active {
+    background: rgba(138, 43, 226, 0.1); /* Soft purple tint */
+    color: var(--accent-purple);
+}
+.registered-expertise-container, .session-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    color: var(--text-primary);
+}
+
+.no-expertise-found {
+    border: 2px dashed var(--border-color);
+    background: #FBFCFD;
+    color: var(--text-secondary);
+}
